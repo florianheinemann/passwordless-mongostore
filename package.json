@@ -6,7 +6,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "keywords": [],
   "dependencies": {
     "mongodb": "^1.4.5"
   },
@@ -23,5 +22,25 @@
     "passwordless": "*"
   },
   "author": "Florian Heinemann <florian.heinemann@gmail.com> (http://twitter.com/florian__h)",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/florianheinemann/passwordless-mongostore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/florianheinemann/passwordless-mongostore/issues"
+  },
+  "homepage": "https://github.com/florianheinemann/passwordless-mongostore",
+  "keywords": [
+    "passwordless",
+    "mongo",
+    "mongodb",
+    "nopassword",
+    "no-password",
+    "password-less",
+    "tokenstore"
+  ]
 }
