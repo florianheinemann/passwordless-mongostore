@@ -102,7 +102,7 @@ describe('General TokenStore tests (no need to modify)', function() {
 				expect(function() { store.store(uuid.v4(), chance.email(), 
 					'', 'http://' + chance.domain() + '/page.html', function() {})}).to.throw(Error);
 				expect(function() { store.store(uuid.v4(), chance.email(), 
-					1000*60, '', function() {})}).to.throw(Error);
+					1000*60, '', function() {})}).to.not.throw();
 				expect(function() { store.store(uuid.v4(), chance.email(), 
 					1000*60, 'http://' + chance.domain() + '/page.html')}).to.throw(Error);
 			})

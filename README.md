@@ -28,4 +28,4 @@ To be finalized
 [MIT License](http://opensource.org/licenses/MIT)
 
 ## Author
-Florian Heinemann [@thesumofall/](http://twitter.com/thesumofall/)
+Florian Heinemann [@thesumofall](http://twitter.com/thesumofall/)
