@@ -143,6 +143,30 @@ describe('General TokenStore tests (no need to modify)', function() {
 			})
 		})
 
+		describe('length()', function() {
+			it('should return 0 for an empty TokenStore', function (done) {
+				var store = TokenStoreFactory();
+				store.length(function(err, count) {
+					expect(count).to.equal(0);
+					done();
+				});
+			})
+
+			it('should return 2 after 2 tokens have been stored', function (done) {
+				var store = TokenStoreFactory();
+				store.store(uuid.v4(), chance.email(), 
+					1000*60, 'http://' + chance.domain() + '/page.html', function() {
+						store.store(uuid.v4(), chance.email(), 
+							1000*60, 'http://' + chance.domain() + '/page.html', function() {
+								store.length(function(err, count) {
+									expect(count).to.equal(2);
+									done();
+								});
+							})
+					});
+			})
+		})
+
 		describe('flow', function() {
 			it('should validate an existing token', function (done) {
 				var store = TokenStoreFactory();

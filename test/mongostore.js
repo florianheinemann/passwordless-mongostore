@@ -64,7 +64,6 @@ describe('Specific tests', function() {
 
 		MongoClient.connect(testUri, function(err, db) {
 			db.collection('passwordless-token', {strict:true}, function(err, collection) {
-console.log(collection)
 				expect(err).to.exist;
 
 				store.store(uuid.v4(), chance.email(), 
