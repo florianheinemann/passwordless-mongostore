@@ -8,7 +8,7 @@ First, install the module:
 
 `$ npm install passwordless-mongostore --save`
 
-Afterwards, follow the guide for [Passwordless](https://github.com/florianheinemann/passwordless). A typical implementation looks like this:
+Afterwards, follow the guide for [Passwordless](https://github.com/florianheinemann/passwordless). A typical implementation may look like this:
 
 ```javascript
 // to be finalized
