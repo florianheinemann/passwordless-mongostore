@@ -66,7 +66,7 @@ describe('Specific tests', function() {
 			db.collection('passwordless-token', {strict:true}, function(err, collection) {
 				expect(err).to.exist;
 
-				store.store(uuid.v4(), chance.email(), 
+				store.storeOrUpdate(uuid.v4(), chance.email(), 
 					1000*60, 'http://' + chance.domain() + '/page.html', 
 					function() {
 						db.collection('passwordless-token', {strict:true}, function(err, collection) {
