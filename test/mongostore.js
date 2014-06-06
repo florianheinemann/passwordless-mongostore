@@ -70,8 +70,16 @@ describe('Specific tests', function() {
 		expect(function() { new MongoStore() }).to.throw(Error);
 	})
 
+	it('should not allow the instantiation with an empty constructor', function () {
+		expect(function() { new MongoStore(123) }).to.throw(Error);
+	})
+
 	it('should allow proper instantiation', function () {
 		expect(function() { TokenStoreFactory() }).to.not.throw;
+	})
+
+	it('should allow proper instantiation with options', function () {
+		expect(function() { new MongoStore(testUri, { db: {numberOfRetries:2}}) }).to.not.throw;
 	})
 
 	it('should default to "passwordless-token" as collection name', function (done) {
@@ -85,6 +93,26 @@ describe('Specific tests', function() {
 					1000*60, 'http://' + chance.domain() + '/page.html', 
 					function() {
 						db.collection('passwordless-token', {strict:true}, function(err, collection) {
+							expect(collection).to.exist;
+							expect(err).to.not.exist;
+							done();
+						});
+					});
+			});
+		})
+	})
+
+	it('should change name of collection based on "mongostore.collection"', function (done) {
+		var store = new MongoStore(testUri, { mongostore : { collection: 'whatsup' }});
+
+		MongoClient.connect(testUri, function(err, db) {
+			db.collection('whatsup', {strict:true}, function(err, collection) {
+				expect(err).to.exist;
+
+				store.storeOrUpdate(uuid.v4(), chance.email(), 
+					1000*60, 'http://' + chance.domain() + '/page.html', 
+					function() {
+						db.collection('whatsup', {strict:true}, function(err, collection) {
 							expect(collection).to.exist;
 							expect(err).to.not.exist;
 							done();
