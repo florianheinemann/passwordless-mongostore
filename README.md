@@ -28,9 +28,29 @@ app.use(passwordless.sessionSupport());
 app.use(passwordless.acceptToken());
 ```
 
-## Options
+## Initialization
 
-To be finalized
+```javascript
+new MongoStore(uri, [options]);
+```
+* **uri:** *(string)* MongoDB URI as further described in the [MongoDB docs]( http://docs.mongodb.org/manual/reference/connection-string/)
+* **[options]:** *(object)* Optional. This can include MongoClient options as described in the [docs]( http://mongodb.github.io/node-mongodb-native/api-generated/mongoclient.html#mongoclient-connect) and the ones described below combined in one object as shown in the example
+
+Example:
+```javascript
+var mongoURI = 'mongodb://localhost/passwordless-simple-mail';
+passwordless.init(new MongoStore(mongoURI, {
+    server: {
+        auto_reconnect: true
+    },
+    mongostore: {
+        collection: 'token'
+    }
+}));
+```
+
+### Options
+* **[mongostore.collection]:** *(string)* Optional. Name of the collection to be used. Default: 'passwordless-token'
 
 ## Tests
 
