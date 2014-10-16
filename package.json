@@ -1,6 +1,6 @@
 {
   "name": "passwordless-mongostore",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "MongoDB TokenStore for Passwordless",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "bcrypt": "^0.7.8",
     "mongodb": "^1.4.5",
-    "passwordless-tokenstore": "0.0.8"
+    "passwordless-tokenstore": "0.0.10"
   },
   "devDependencies": {
     "chai": "~1.9.1",
@@ -18,7 +18,7 @@
     "grunt-mocha-test": "~0.10.2",
     "mocha": "~1.18.2",
     "node-uuid": "^1.4.1",
-    "passwordless-tokenstore-test": "0.0.9"
+    "passwordless-tokenstore-test": "^0.1.0"
   },
   "author": "Florian Heinemann <florian.heinemann@gmail.com> (http://twitter.com/thesumofall)",
   "license": "MIT",
