@@ -10,13 +10,13 @@ Tokens are stored in a MongoDB database and are hashed and salted using [bcrypt-
 
 First, install the module:
 
-`$ npm install passwordless-mongostore --save`
+`$ npm install passwordless-mongostore-bcrypt-node --save`
 
 Afterwards, follow the guide for [Passwordless](https://github.com/florianheinemann/passwordless). A typical implementation may look like this:
 
 ```javascript
 var passwordless = require('passwordless');
-var MongoStore = require('passwordless-mongostore');
+var MongoStore = require('passwordless-mongostore-bcrypt-node');
 
 var mongoURI = 'mongodb://localhost/passwordless-simple-mail';
 passwordless.init(new MongoStore(mongoURI));

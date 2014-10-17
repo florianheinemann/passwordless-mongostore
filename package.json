@@ -1,6 +1,6 @@
 {
   "name": "passwordless-mongostore-bcrypt-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MongoDB TokenStore for Passwordless using a pure Node.js implementation of bcrypt",
   "main": "index.js",
   "scripts": {

@@ -1,3 +1,14 @@
+# 0.1.1 (2014-10-16)
+
+Bugfixes:
+- N/A
+
+Features:
+- N/A
+
+Documentation:
+- Update of Readme
+
 # 0.1.0 (2014-10-16)
 
 Bugfixes:
