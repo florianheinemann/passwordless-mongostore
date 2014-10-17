@@ -4,8 +4,19 @@ Bugfixes:
 - N/A
 
 Features:
+- BRANCHED passwordless-mongostore-bcrypt-node
 - CHANGE to bcrypt-nodejs
-- CHANGE of testing framework dependency to latest version
+
+Documentation:
+- N/A
+
+# 0.0.7 (2014-10-16)
+
+Bugfixes:
+- UPDATED test package requirements
+
+Features:
+- N/A
 
 Documentation:
 - N/A
