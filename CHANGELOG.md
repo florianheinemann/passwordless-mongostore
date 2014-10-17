@@ -1,3 +1,15 @@
+# 0.1.0 (2014-10-16)
+
+Bugfixes:
+- N/A
+
+Features:
+- BRANCHED passwordless-mongostore-bcrypt-node
+- CHANGE to bcrypt-nodejs
+
+Documentation:
+- N/A
+
 # 0.0.7 (2014-10-16)
 
 Bugfixes:
