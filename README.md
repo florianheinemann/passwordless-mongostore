@@ -55,7 +55,7 @@ passwordless.init(new MongoStore(mongoURI, {
 * **[mongostore.collection]:** *(string)* Optional. Name of the collection to be used. Default: 'passwordless-token'
 
 ## Hash and salt
-As the tokens are equivalent to passwords (even though they do have the security advantage of only being valid for a limited time) they have to be protected in the same way. passwordless-mongostore uses [bcrypt](https://github.com/ncb000gt/node.bcrypt.js/) with automatically created random salts. To generate the salt 10 rounds are used.
+As the tokens are equivalent to passwords (even though they do have the security advantage of only being valid for a limited time) they have to be protected in the same way. passwordless-mongostore uses [bcrypt-nodejs](https://github.com/shaneGirish/bcrypt-nodejs) with automatically created random salts. To generate the salt 10 rounds are used.
 
 ## Tests
 
