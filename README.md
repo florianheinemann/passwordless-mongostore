@@ -2,7 +2,7 @@
 
 This module provides token storage for [Passwordless](https://github.com/florianheinemann/passwordless), a node.js module for express that allows website authentication without password using verification through email or other means. Visit the project's website https://passwordless.net for more details.
 
-Tokens are stored in a MongoDB database and are hashed and salted using [bcrypt](https://github.com/ncb000gt/node.bcrypt.js/).
+Tokens are stored in a MongoDB database and are hashed and salted using [bcrypt](https://github.com/ncb000gt/node.bcrypt.js/). *If you have trouble installing bcrypt (esp. on Windows) you could also consider using the [slower but pure-JS version](https://www.npmjs.org/package/passwordless-mongostore) of MongoStore.*
 
 ## Usage
 

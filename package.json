@@ -1,13 +1,13 @@
 {
   "name": "passwordless-mongostore",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "MongoDB TokenStore for Passwordless",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "bcrypt": "^0.7.8",
+    "bcrypt": "^0.8.0",
     "mongodb": "^1.4.5",
     "passwordless-tokenstore": "0.0.10"
   },
