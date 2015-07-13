@@ -2,6 +2,7 @@
 
 Features:
 - REQUIRE latest passwordless-tokenstore-test
+- REQUIRE latest mongodb
 
 # 0.1.0 (2014-10-16)
 
