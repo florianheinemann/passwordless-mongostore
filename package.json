@@ -1,6 +1,6 @@
 {
   "name": "passwordless-mongostore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MongoDB TokenStore for Passwordless",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "grunt-mocha-test": "~0.10.2",
     "mocha": "~1.18.2",
     "node-uuid": "^1.4.1",
-    "passwordless-tokenstore-test": "^0.1.0"
+    "passwordless-tokenstore-test": "^0.1.2"
   },
   "author": "Florian Heinemann <florian.heinemann@gmail.com> (http://twitter.com/thesumofall)",
   "license": "MIT",
