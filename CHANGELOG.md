@@ -1,3 +1,8 @@
+# 0.1.3 (2015-07-13)
+
+Features:
+- UPDATED all dependencies incl. bcrypt
+
 # 0.1.2 (2015-07-13)
 
 Bugfixes:
