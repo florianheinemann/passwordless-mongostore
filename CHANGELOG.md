@@ -1,3 +1,8 @@
+# 0.1.2 (2015-07-13)
+
+Bugfixes:
+- FIX bugfixes were not properly detected
+
 # 0.1.1 (2015-07-13)
 
 Features:

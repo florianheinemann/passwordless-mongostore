@@ -75,11 +75,11 @@ describe('Specific tests', function() {
 	})
 
 	it('should allow proper instantiation', function () {
-		expect(function() { TokenStoreFactory() }).to.not.throw;
+		expect(function() { TokenStoreFactory() }).to.not.throw();
 	})
 
 	it('should allow proper instantiation with options', function () {
-		expect(function() { new MongoStore(testUri, { db: {numberOfRetries:2}}) }).to.not.throw;
+		expect(function() { new MongoStore(testUri, { db: {numberOfRetries:2}}) }).to.not.throw();
 	})
 
 	it('should default to "passwordless-token" as collection name', function (done) {
