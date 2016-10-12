@@ -1,3 +1,11 @@
+# 0.1.4 (2016-10-12)
+
+Bugfixes:
+- FIX return an empty string when no referrer has been provided
+
+Changes:
+- UPDATED all dependencies incl. bcrypt
+
 # 0.1.3 (2015-07-13)
 
 Features:
