@@ -1,3 +1,8 @@
+# 0.1.5 (2019-01-02)
+
+Changes:
+- UPDATED all dependencies incl. bcrypt
+
 # 0.1.4 (2016-10-12)
 
 Bugfixes:
