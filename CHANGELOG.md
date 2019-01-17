@@ -1,3 +1,8 @@
+# 0.1.5 (2019-01-17)
+
+Changes:
+- UPDATED all dependencies
+
 # 0.1.4 (2016-10-12)
 
 Bugfixes:
