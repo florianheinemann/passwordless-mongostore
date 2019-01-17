@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var uuid = require('node-uuid');
+var uuid = require('uuid');
 var chance = new require('chance')();
 
 var MongoStore = require('../');
